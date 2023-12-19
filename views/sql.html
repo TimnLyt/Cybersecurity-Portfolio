@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <h1 style = "text-align: center;" >SQL Injection project with guide</h1>
+    <br>
+    <form action="/api" method="post" style = "text-align: center;">
+        <h1>Create account</h1>
+        <input id="1" type="text" name="user">
+        <input id="2" type="text" name="password">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        const user = document.getElementById("1")
+        const password = document.getElementById("2")
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            console.log([...data])
+        //API
+        fetch("/api",{
+            method:"POST",
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .then(err => console.log(err))
+    })
+    </script>
+    <br>
+    <form action="/login" method="post" style = "text-align: center;">
+        <h1>Login</h1>
+        <input id="3" type="text" name="user1">
+        <input id="4" type="text" name="password1">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        const user1 = document.getElementById("3")
+        const password1 = document.getElementById("4")
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            console.log([...data])
+        //API
+        fetch("/login",{
+            method:"POST",
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .then(err => console.log(err))
+    })
+
+    </script>
+    <br>
+    <p>1. Create a username and a password under Create Account.</p>
+    <p>2. Try logging in with username and password under Login. This should give you a logged in message. Entering the wrong username or password should show an error)</p>
+    <p>3. Now enter a username that shouldn't be in the database. User example: <b>123123user</b> password example: <b>123pw</b>. Test it, shouldn't work. Now add a <b>' OR 1=1;#</b> at the end of the username. This should break the function in server.js with code vulnerable to SQL injection.</p>
+    <p>Explination: The single quotation breaks the code while <b>1=1;</b> makes the username now a true statement. The <b>#</b> allows you to comment out everything after the username in the function, which is the password. This allows you to log yourself in without actually having a valid user created.</p>
+    <p>Congradulations! You just performed a SQL injection!</p>
+</body>
+</html>

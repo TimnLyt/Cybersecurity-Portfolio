@@ -1,0 +1,184 @@
+body, html{
+  height: auto;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color:#202528;
+  background-color: #202528;
+}
+
+section.container{
+  display: unset;
+}
+
+.nav_left{
+  padding-left: 100px;
+}
+
+.nav_right{
+  padding-right: 100px;
+}
+
+.pad_left{
+  padding-left: 10px;
+}
+
+.pad_right{
+  padding-right: 10px;
+}
+
+.pad_top{
+  margin-top: 50px;
+  align-items: center;
+}
+
+.top{
+  padding-top: 50px;
+}
+
+.center{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.img{
+  padding-top: 50px;
+  display: block;
+  width: 15%;
+  margin: auto;
+}
+
+.ptext {
+  font-family: Montserrat;
+  position: center;
+  text-align: center;
+  top: 45%;
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: 8px;
+  color: #000000;
+  line-height: 70px;
+}
+
+.bottom_text {
+  font-size: 20px;
+  font-family: Montserrat;
+  letter-spacing: 3px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.block {
+  height: 600px;
+  background-color: #FFE5B4;
+}
+
+.experience_title{
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  top: 45%;
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: 8px;
+  color: white;
+  line-height: 70px;
+}
+
+.experience_block{
+  color: 	white;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.row2 {
+  padding-top: 50px;
+}
+
+.blue{
+  padding-top: 100px;
+  width: 100%;
+}
+
+.sizing{
+  font-size: 20px;
+}
+
+.me{
+  padding-right: 30px;
+}
+
+.to{
+  padding-left: 30px;
+}
+
+.top1{
+  padding-top: 130px;
+}
+
+.bottom{
+  padding-bottom: 60px;
+}
+
+.about_block{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  background-color: #FFE5B4;
+}
+
+.about_title{
+  position: relative;
+  float: center;
+}
+
+.about_desc{
+  font-size: 16px;
+  padding: 25px;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  line-height: 30px;
+  
+}
+
+.background{
+  position: relative;
+  width: 800px;
+  float: left;
+  padding-left: 50px;
+}
+
+footer{
+  bottom: 0;
+  background-color: #202528;
+  width: 100%;
+  color:white;
+  text-align: center;
+  padding-bottom: 60px;
+  height: 20px;
+}
+
+.botm{
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.impg{
+  padding-top: 20px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.rounded_circle{
+  padding-top: 0%;
+}
+
