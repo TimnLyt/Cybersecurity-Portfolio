@@ -15,7 +15,7 @@ app.unsubscribe(express.static(path.join(__dirname,'static')));
 app.use(express.static('public'));
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/views/index.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/views/sql.html", (req, res) => {
